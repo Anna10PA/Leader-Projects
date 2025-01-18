@@ -1,6 +1,5 @@
 function BackgroundModerl(){
     let Color = document.getElementById('background_moder').value
-    let calculator = document.getElementById('calculator')
 
     if (Color){
         if (Color === 'Black'){
