@@ -1,17 +1,17 @@
-let taskInput = document.getElementById('text');
+let task = document.getElementById('text');
 let taskList = document.getElementById('list');
 function addTask() {  
-    if (taskInput.value.trim() !== '') {
-      const li = document.createElement('li');
-      li.textContent = taskInput.value;
+    if (task.value.trim() !== '') {
+      let li = document.createElement('li');
+      li.textContent = task.value;
   
-      const deleteButton = document.createElement('button');
+      let deleteButton = document.createElement('button');
       deleteButton.textContent = 'Delete';
       deleteButton.onclick = () => li.remove();
   
       li.appendChild(deleteButton);
       taskList.appendChild(li);
   
-      taskInput.value = ''; 
+      task.value = ''; 
     }
   }

@@ -3,6 +3,7 @@ body{
     overflow: hidden;
     display:flex;
     flex-direction: column;
+    background-color: black;
 }
 main{
     display:flex;
@@ -14,7 +15,7 @@ main{
     flex-direction: column;
     justify-content: center;
     padding:10px;
-    background-color: rgb(0, 0, 0);
+    background:none;
     box-shadow:0px 0px 10px #0f0;
     border-radius:10px
 }
@@ -38,7 +39,7 @@ button{
     color:rgb(0, 255, 0);
     border-color: #0f0;
     text-shadow:0px 0px 5px #0f0;
-    transition:0.2s ease
+    transition:0.2s 
 }
 button:hover{
     box-shadow:0px 0px 10px #0f0
@@ -47,23 +48,19 @@ button:active{
     background-color: #0f0;
     color:black
 }
-/* .result{
-    display:flex;
-    justify-content: center;
-} */
 input{
     margin:20px 0px;
     height:70px;
-    width:82%;
+    width:79%;
     font-size:30px;
     border-radius:10px 10px 0px 0px;
     margin-left:8%;
     background: none;
     color:#0f0;
     border-style: groove;
-    display:flex;
-    justify-content: flex-end;
-    border-color:#0f0
+    border-color:#0f0;
+    padding-right:20px;
+    text-align: right;
 }
 #equal{
     flex-grow: 1;
@@ -75,12 +72,19 @@ input{
     background-color: #0f0;
     color:black;
 }
-/* @media (max-width:400px){
-    input{
-        height:200px;
-    }
-    .calculator{
-        margin-top:-30px;
-        width:50%
-    }
-} */
+select{
+    width:150px;
+    font-size: 20px;
+    height:50px;
+    background:none;
+    color:grey;
+    text-shadow: 0px 0px 4px #0f0;
+    border-style: groove;
+    cursor:pointer;
+    text-align: center;
+    transition:0.5s
+}
+select:hover{
+    background-color: rgb(17, 17, 17);
+    border-radius:20px
+}
