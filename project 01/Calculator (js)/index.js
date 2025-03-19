@@ -1,6 +1,6 @@
 function backgroundModerl(){
     let BackgroundColor = document.getElementById('background_moder').value
-
+    
     if (BackgroundColor){
         document.body.style.backgroundColor = BackgroundColor;
     }
